@@ -10,6 +10,7 @@ const apis = require('./routes/routes')
 app.use(express.json());
 app.use(
   cors({
+    origin: ["https://finlock-assingment-frontend.onrender.com"],
     credentials: true,
   })
 );
