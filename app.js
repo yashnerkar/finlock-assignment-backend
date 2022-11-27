@@ -25,4 +25,4 @@ app.use(
 
 app.use("/api", apis);
 
-app.listen(8000, () => console.log("server is listening on 8000"));
+app.listen(process.env.PORT || 8000, () => console.log("server is listening on 8000"));
